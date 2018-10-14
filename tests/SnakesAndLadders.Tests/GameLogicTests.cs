@@ -111,5 +111,65 @@ namespace SnakesAndLadders.Tests
             Assert.Equal(97, logic.TokenPosition);
             Assert.False(logic.GameWon);
         }
+
+        [Fact]
+        public async Task Should_decrease_position_landing_on_snakes_head()
+        {
+            //Given
+            var logic = new GameLogic();
+            logic.Start();
+            logic.SetupSnakes();
+
+            //When
+            logic.MoveToken(11);
+
+            //Then
+            Assert.Equal(2, logic.TokenPosition);
+        }
+        
+        [Fact]
+        public async Task Should_remain_position_landing_on_snakes_tail()
+        {
+            //Given
+            var logic = new GameLogic();
+            logic.Start();
+            logic.SetupSnakes();
+
+            //When
+            logic.MoveToken(1);
+
+            //Then
+            Assert.Equal(2, logic.TokenPosition);
+        }
+        
+        [Fact]
+        public async Task Should_increase_position_landing_on_bottom_of_ladder()
+        {
+            //Given
+            var logic = new GameLogic();
+            logic.Start();
+            logic.SetupLadders();
+
+            //When
+            logic.MoveToken(1);
+
+            //Then
+            Assert.Equal(12, logic.TokenPosition);
+        }
+        
+        [Fact]
+        public async Task Should_remain_position_landing_on_top_of_ladder()
+        {
+            //Given
+            var logic = new GameLogic();
+            logic.Start();
+            logic.SetupLadders();
+
+            //When
+            logic.MoveToken(11);
+
+            //Then
+            Assert.Equal(12, logic.TokenPosition);
+        }
     }
 }
