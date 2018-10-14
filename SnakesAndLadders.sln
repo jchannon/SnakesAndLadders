@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLadders", "src\SnakesAndLadders\SnakesAndLadders.csproj", "{AC2BE521-7915-4C55-8ADE-2914A62E7A83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2B340C1F-C4C7-45BB-AD1A-83D538B92420}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6E0E7A96-DA75-48F9-89FE-B8657AFAFD3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLadders.Tests", "tests\SnakesAndLadders.Tests\SnakesAndLadders.Tests.csproj", "{E2A29139-F840-4925-8126-21752F7D54B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC2BE521-7915-4C55-8ADE-2914A62E7A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2BE521-7915-4C55-8ADE-2914A62E7A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2BE521-7915-4C55-8ADE-2914A62E7A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2BE521-7915-4C55-8ADE-2914A62E7A83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A29139-F840-4925-8126-21752F7D54B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A29139-F840-4925-8126-21752F7D54B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A29139-F840-4925-8126-21752F7D54B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A29139-F840-4925-8126-21752F7D54B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC2BE521-7915-4C55-8ADE-2914A62E7A83} = {2B340C1F-C4C7-45BB-AD1A-83D538B92420}
+		{E2A29139-F840-4925-8126-21752F7D54B8} = {6E0E7A96-DA75-48F9-89FE-B8657AFAFD3D}
+	EndGlobalSection
+EndGlobal
